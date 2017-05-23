@@ -1,0 +1,67 @@
+/* @group Developer Media Markers
+-----------------------------------------*/
+/* 1200, 1024, 768, 480 */
+body:after{
+	position: fixed;
+	z-index: 9999;
+	font-size: 10px;
+	font-weight: 700;
+	line-height: 1;
+	padding: 3px 10px;
+	right: 0;
+	color: white;
+	bottom: 30px;
+	display: block;
+	white-space: pre; 
+}
+
+html:after{
+	content: "";
+	display: block;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 2502px;
+	height: 32px;
+	overflow: hidden;
+	z-index: 999999;
+	background: url(screen-ruler.png) no-repeat bottom left;
+}
+
+/* Xtra Small Screens and larger*/
+@media only screen 
+and (min-width: 0px){
+	body:after{
+		content:"Default Screen Size \A 0px+";
+		background-color: rgba(50, 240, 0, 0.3);
+	}
+}
+
+
+/* Small Screens*/
+@media only screen 
+and (min-width: 768px){
+	body:after{
+		content:"Small Screens \A 768px+";
+		background-color: rgba(242, 57, 220, 0.3);
+	}
+}
+
+/*Medium Screens*/
+@media only screen
+and (min-width: 1024px){
+	body:after{
+		content:"Medium Screens \A 1024px+";
+		background-color: rgba(240, 0, 0, 0.3);
+	}
+}
+
+/*Large Screens*/
+@media only screen
+and (min-width: 1200px){
+	body:after{
+		content:"Large Sceens \A 1200px – ∞";
+		background-color: rgba(92, 55, 254, 0.3);
+	}
+}
+/* @end */

@@ -1,0 +1,81 @@
+/* @override 
+	http://sandbox.dev/wp-content/plugins/desq-toolbox/inc/desq-jqueryui-tabs-accordions/css/jqui-style.css?ver=4.7.5 */
+
+/*TABS CSS*/
+	.ui-tabs{
+		margin-top: 30px;
+	}
+	ul.ui-tabs-nav{
+		margin: 0;
+	}
+
+	ul.ui-tabs-nav li{
+		display: inline-block;
+	}
+
+	ul.ui-tabs-nav li a{
+		padding: 10px 20px;
+		cursor: pointer;
+		font-size: 17px;
+		color: white;
+		background: #CDCECF;
+		border: 1px solid #CDCECF;
+		position: relative;
+		top: -6px;
+		text-decoration: none;
+		outline: 0;
+	}
+
+	ul.ui-tabs-nav li.ui-state-active a{
+		background: #fff;
+		color: #CDCECF;
+		border-bottom: 1px solid white;
+	}
+
+	ul.ui-tabs-nav li:hover a{
+		background:white;
+		color: #CDCECF;
+	}
+
+	.ui-tabs-panel{
+		padding: 15px;
+		border: 1px solid #CDCECF;
+		background-color: #fff;
+	}
+	
+	.ui-tabs-panel:before, 
+	.ui-tabs-panel:after {
+		content: " ";
+		display: table;
+	} 
+	.ui-tabs-panel:after {
+		clear: both;
+	}
+	
+	
+/*ACCORDION CSS*/
+	.ui-accordion .ui-accordion-header:before{
+		content: ">";
+		display: inline-block;
+		line-height: 0;
+		-webkit-transition: all 0.4s ease;
+				transition: all 0.4s ease;
+	}	
+	.ui-accordion .ui-accordion-header {
+		font-size: 20px;
+		font-weight: 500;
+		margin-top: 0;
+		padding: 5px;
+		cursor: pointer;
+		border: 1px solid silver;
+		outline: 0;
+		margin-bottom: 20px;
+	}
+	
+	.ui-accordion .ui-accordion-header.ui-state-active:before{
+		transform: rotate(90deg);
+	}
+
+	.ui-accordion .ui-accordion-content p{
+		margin-top: 0;
+	}
