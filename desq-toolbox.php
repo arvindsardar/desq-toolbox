@@ -10,7 +10,7 @@
 	*/
 	
 /*	---------------------------------------------------
-	MODULES: Comment/Uncomment
+	MODULES
 	--------------------------------------------------- */
 	// Load values from the settings page
 	$desq_setting = get_option('desq_settings');
