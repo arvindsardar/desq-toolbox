@@ -72,7 +72,7 @@ function desq_action_links( $links ) {
 }
 
 // UPDATER
-require_once( 'BFIGitHubPluginUploader.php' );
+require_once( 'GitHubPluginUploader.php' );
 if ( is_admin() ) {
     new BFIGitHubPluginUpdater( __FILE__, 'arvindsardar', "desq-toolbox" );
 }
