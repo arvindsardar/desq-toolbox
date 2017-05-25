@@ -4,6 +4,7 @@ or enable from with Tinymce advanced plugin*/
 #adminmenu #menu-pages div.wp-menu-image::before,
 #adminmenu #menu-media div.wp-menu-image::before,
 #adminmenu #menu-posts div.wp-menu-image::before,
+#adminmenu #toplevel_page_wpcf7 div.wp-menu-image::before,
 #adminmenu #menu-comments div.wp-menu-image::before {
     content: '\f464';
 }
