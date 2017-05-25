@@ -3,7 +3,7 @@
 	* Plugin Name: DeSQ ToolBox
 	* Plugin URI: https://github.com/arvindsardar/desq-toolbox
 	* Description: Wordpress Snippets
-	* Version: 1.1
+	* Version: 1.2
 	* Author: Arvind Sardar
 	* Author URI: http://designsupport.com.au
 	* License: GPL2
@@ -71,7 +71,11 @@ function desq_action_links( $links ) {
    return $links;
 }
 
-
+// UPDATER
+require_once( 'BFIGitHubPluginUploader.php' );
+if ( is_admin() ) {
+    new BFIGitHubPluginUpdater( __FILE__, 'arvindsardar', "desq-toolbox" );
+}
 
 
 
