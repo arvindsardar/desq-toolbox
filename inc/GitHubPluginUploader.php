@@ -126,6 +126,7 @@ class GitHubPluginUpdater {
         }
 
         // Add our plugin information
+        $response->name = "DeSQ Toolbox";
         $response->last_updated = $this->githubAPIResult->published_at;
         $response->slug = $this->slug;
         $response->plugin_name  = $this->pluginData["desq-toolbox"];
@@ -146,14 +147,14 @@ class GitHubPluginUpdater {
         $response->download_link = $downloadLink;
 
         // Load Parsedown
-        require_once( plugin_dir_path( __FILE__ ) . "Parsedown.php" );
+        // require_once( plugin_dir_path( __FILE__ ) . "Parsedown.php" );
 
         // Create tabs in the lightbox
         $response->sections = array(
-            'Description'   => $this->pluginData["Description"],
-            'changelog'     => class_exists( "Parsedown" )
-                ? Parsedown::instance()->parse( $this->githubAPIResult->body )
-                : $this->githubAPIResult->body
+            'Description'   => $this->pluginData["Description"]
+            // 'changelog'     => class_exists( "Parsedown" )
+                // ? Parsedown::instance()->parse( $this->githubAPIResult->body )
+                // : $this->githubAPIResult->body
         );
 
         // Gets the required version of WP if available
