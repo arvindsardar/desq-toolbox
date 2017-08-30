@@ -206,7 +206,8 @@ function desq_options_page() { ?>
 			<a href="/wp-admin/plugin-install.php?s=Sticky+Menu+(or+Anything!)+on+Scroll+&tab=search&type=term">Sticky Menu</a><br>
 			<a href="/wp-admin/plugin-install.php?s=Custom+Content+Shortcode&tab=search&type=term">Custom Content Shortcode</a><br>
 			<a href="/wp-admin/plugin-install.php?s=Duplicator&tab=search&type=term">Duplicator</a><br>
-			<a href="/wp-admin/plugin-install.php?s=Advanced+Custom+Fields&tab=search&type=term">Advanced Custom Fields</a>
+			<a href="/wp-admin/plugin-install.php?s=Advanced+Custom+Fields&tab=search&type=term">Advanced Custom Fields</a><br>
+			<a href="/wp-admin/plugin-install.php?s=+HTML+Editor+Syntax+Highlighter&tab=search&type=term">HTML Editor Syntax Highlighter</a>
 		</div>
 	<?php 
 	}
